@@ -1,0 +1,50 @@
+h1{
+    color: rgb(249, 163, 163);
+    text-decoration: wavy;
+}
+div{
+    
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.Celcius{
+    background-color: aqua;
+    width: 20rem;
+    height: 25rem;
+    --elevation: 10;
+    border-radius: 1rem;
+    margin: 5rem;
+    padding: 5rem;
+}
+.Kelvin{
+    background-color: rgb(252, 167, 20);
+    width: 20rem;
+    height: 25rem;
+    --elevation: 10;
+    border-radius: 1rem;
+    margin: 5rem;
+    padding: 5rem;
+}
+.Fahrenheit{
+    background-color: rgb(243, 128, 170);
+    width: 20rem;
+    height: 25rem;
+    --elevation: 10;
+    border-radius: 1rem;
+    margin: 5rem;
+    padding: 5rem;
+}
+input{
+    border: none;
+    background : none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin:2rex
+}
+h2{
+    margin-block-end: 100px;
+}

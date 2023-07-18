@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="app.css">
+</head>
+<title>Fahrenheit to Celcius Temperature Converter</title>
+<body>
+<center>
+<div class="head"><h1>Temperature Converter</h1></div>
+<div class="row">
+<div class="Celcius"><br>
+  <h2>Celcius</h2>
+  <input id="inputCelcius" type="number" placeholder="Celcius" oninput="temperatureConverter1(this.value)" onchange="temperatureConverter1(this.value)">
+    
+</div>
+<div class="Fahrenheit">
+    <h2>Fahrenheit</h2>
+    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter2(this.value)" onchange="temperatureConverter2(this.value)">
+</div>
+  <div class="Kelvin">
+    <h2>Kelvin</h2>
+    <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverter3(this.value)" onchange="temperatureConverter3(this.value)">
+  </div>
+</div>
+</center>
+
+<script>
+function temperatureConverter1(valNum) {
+  valNum = parseFloat(valNum);
+document.getElementById("inputFahrenheit").value=(valNum*9/5+32);
+document.getElementById("inputKelvin").value=(valNum+273.15);
+}
+function temperatureConverter2(valNum) {
+  valNum = parseFloat(valNum);
+document.getElementById("inputCelcius").value=((valNum-32)/1.8);
+document.getElementById("inputKelvin").value=((valNum-32)/1.8+273.15);
+}
+function temperatureConverter3(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("inputCelcius").value=(valNum-273.15);
+    document.getElementById("inputFahrenheit").value=((valNum-273.15)*1.8+32);
+}
+</script>
+
+</body>
+</html>
